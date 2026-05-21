@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ButtonA from "@/components/ui/ButtonA";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -137,13 +138,12 @@ export default function ContactForm() {
           </div>
         )}
 
-        <button
+        <ButtonA
           type="submit"
+          text={isLoading ? "Sending..." : "Send Message"}
+          className="w-full max-w-xs rounded-full py-4 text-base font-semibold disabled:opacity-50"
           disabled={isLoading}
-          className="button-primary w-full max-w-xs rounded-full py-4 text-base font-semibold disabled:opacity-50"
-        >
-          {isLoading ? "Sending..." : "Send Message"}
-        </button>
+        />
       </div>
     </form>
   );

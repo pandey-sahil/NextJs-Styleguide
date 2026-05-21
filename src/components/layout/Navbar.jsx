@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import ButtonA from "@/components/ui/ButtonA";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 z-50 w-full py-6">
       <div className="padding-global">
         <div className="container-xlarge">
-          <div className="flex items-center justify-between">
+          <div className=" flex items-center justify-between">
             {/* LOGO */}
             <a href="/" className="heading-h6">
               Flowdojo
@@ -32,9 +33,7 @@ export default function Navbar() {
               <a href="#" className="hover:text-primary transition-colors">Work</a>
               <a href="/contact" className="hover:text-primary transition-colors">Contact</a>
 
-              <a href="/contact" className="button-primary">
-                Let's Talk
-              </a>
+              <ButtonA href="/contact" text="Let's Talk" />
             </nav>
 
             {/* MOBILE BUTTON */}
@@ -91,9 +90,7 @@ export default function Navbar() {
             Contact
           </a>
 
-          <a href="/contact" className="button-primary mt-4" onClick={toggleMenu}>
-            Let's Talk
-          </a>
+          <ButtonA href="/contact" text="Let's Talk" className="mt-4" onClick={toggleMenu} />
         </nav>
       </div>
     </header>

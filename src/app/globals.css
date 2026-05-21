@@ -19,11 +19,6 @@
   --breakpoint-xlarge: 1440px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 html {
   scroll-behavior: smooth;
@@ -46,7 +41,6 @@ button {
   background: none;
   border: none;
   cursor: pointer;
-  font: inherit;
 }
 
 /* =========================
