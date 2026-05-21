@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-secondary text-foreground">
       <div className="padding-global container-xlarge mx-auto grid gap-10 border-t border-white/20 py-14 text-sm text-gray-700 sm:grid-cols-[1.4fr_repeat(2,1fr)]">
         <div className="space-y-4">
-          <p className="text-lg font-semibold text-foreground">Flowdojo Styleguide</p>
+          <p className="text-lg font-semibold text-foreground">Next.js Starter</p>
           <p className="max-w-md text-gray-600">
             A clean, modern Next.js starter with smooth scrolling, responsive layouts, and polished components.
           </p>
@@ -49,7 +49,7 @@ export default function Footer() {
         </div>
 
         <div className="sm:col-span-3 border-t border-white/20 pt-6 text-xs text-gray-500 sm:border-t-0 sm:pt-0 sm:text-right">
-          <p>© 2026 Flowdojo Style Guide. All rights reserved.</p>
+          <p>© 2026 Next.js Starter. All rights reserved.</p>
         </div>
       </div>
     </footer>

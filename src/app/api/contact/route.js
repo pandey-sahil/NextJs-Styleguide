@@ -76,8 +76,8 @@ export async function POST(request) {
 
     // Email to your team
     await transporter.sendMail({
-      from: process.env.SMTP_FROM_EMAIL || "noreply@flowdojo.in",
-      to: process.env.CONTACT_EMAIL || "sahilpandey@flowdojo.in",
+      from: process.env.SMTP_FROM_EMAIL || "noreply@nextjs-starter.com",
+      to: process.env.CONTACT_EMAIL || "contact@nextjs-starter.com",
       subject: `New Contact Form Submission: ${subject}`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -92,7 +92,7 @@ export async function POST(request) {
 
     // Confirmation email to user
     await transporter.sendMail({
-      from: process.env.SMTP_FROM_EMAIL || "noreply@flowdojo.com",
+      from: process.env.SMTP_FROM_EMAIL || "noreply@nextjs-starter.com",
       to: email,
       subject: "We received your message",
       html: `
@@ -101,7 +101,7 @@ export async function POST(request) {
         <p>We've received your message and will get back to you as soon as possible.</p>
         <p><strong>Your message summary:</strong></p>
         <p><strong>Subject:</strong> ${subject}</p>
-        <p>Best regards,<br>The Flowdojo Team</p>
+        <p>Best regards,<br>The Next.js Starter Team</p>
       `,
     });
 

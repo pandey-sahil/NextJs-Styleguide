@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import ContactForm from "@/components/sections/ContactForm";
 
 export const metadata = {
-  title: "Contact - Adiveda Practice",
+  title: "Contact - Next.js Starter",
   description: "Get in touch with us. We'd love to hear about your project.",
 };
 
@@ -45,10 +45,10 @@ export default function ContactPage() {
                     <div>
                       <p className="eyebrow mb-3 text-gray-600">Email</p>
                       <a
-                        href="mailto:hello@flowdojo.com"
+                        href="mailto:contact@nextjs-starter.com"
                         className="text-lg font-semibold hover:text-primary transition-colors"
                       >
-                        hello@flowdojo.com
+                        contact@nextjs-starter.com
                       </a>
                     </div>
 

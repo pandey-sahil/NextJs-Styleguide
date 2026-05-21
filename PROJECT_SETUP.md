@@ -84,8 +84,8 @@ SMTP_PASSWORD=your_password
 ### Required Environment Variables
 ```env
 # Email configuration (required)
-CONTACT_EMAIL=hello@flowdojo.com
-SMTP_FROM_EMAIL=noreply@flowdojo.com
+CONTACT_EMAIL=contact@nextjs-starter.com
+SMTP_FROM_EMAIL=noreply@nextjs-starter.com
 
 # Choose ONE email service and add its credentials
 # See options above
